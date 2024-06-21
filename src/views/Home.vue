@@ -1,23 +1,23 @@
 <template>
   <div class="home">
     <video autoplay muted loop id="bg-video">
-      <source src="@/assets/video.mp4" type="video/mp4">
+      <source src="../assets/video.mp4" type="video/mp4">
     </video>
     <div class="content">
       <h1>Демократизация генеративного ИИ</h1>
       <p>Генеративный ИИ - ключ к облегчению науного процесса.</p>
     </div>
+    <section class="parallax">
+      <div class="parallax-content">
+        <h2>Почему это важно?</h2>
+        <p>Генеративный ИИ (GenAI) становится более доступным благодаря сочетанию мощных предобученных моделей, облачных вычислений и открытого исходного кода. На сегодняшний день он уже облегчает жизнь студентам, художникам и многим другим людям.</p>
+      </div>
+    </section>
     <div class="additional-content">
       <section>
         <h2>Введение</h2>
         <p>Генеративный ИИ позволяет создавать новые и уникальные контенты, такие как тексты, изображения и даже видео, используя алгоритмы машинного обучения. Это открывает множество возможностей для креативных индустрий, разработки новых продуктов и услуг, а также улучшения пользовательского опыта.</p>
       </section>
-      <ParallaxSection>
-        <div>
-          <h2>Почему это важно?</h2>
-          <p>Генеративный ИИ (GenAI) становится более доступным благодаря сочетанию мощных предобученных моделей, облачных вычислений и открытого исходного кода. На сегодняшний день он уже облегчает жизнь студентам, художникам и многим другим людям.</p>
-        </div>
-      </ParallaxSection>
       <section>
         <h2>Примеры использования</h2>
         <p>Генеративный ИИ активно используется в различных областях. Например, в медицине он помогает создавать новые лекарственные препараты, в искусстве - генерировать уникальные произведения, а в бизнесе - разрабатывать персонализированные маркетинговые стратегии.</p>
@@ -31,12 +31,7 @@
 </template>
 
 <script>
-import ParallaxSection from '../components/ParallaxSection.vue';
-
 export default {
-  components: {
-    ParallaxSection
-  }
 };
 </script>
 
@@ -73,6 +68,25 @@ export default {
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
   z-index: 1;
+}
+
+.parallax {
+  background-image: url('../assets/parallax-image.jpg');
+  height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.parallax-content {
+  color: white;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон для улучшения читаемости текста */
 }
 
 .additional-content {
