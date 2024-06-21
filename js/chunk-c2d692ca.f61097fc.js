@@ -1,2 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-c2d692ca"],{d9a9:function(n,c,t){"use strict";t("fff5")},f820:function(n,c,t){"use strict";t.r(c);var u=t("7a23");const e={class:"about"},f=Object(u["d"])("h1",null,"О себе",-1),s=Object(u["d"])("p",null,"Студент 3 курса МАДИ, реализующий проект на Vue.js ",-1),a=[f,s];function d(n,c){return Object(u["p"])(),Object(u["c"])("div",e,a)}t("d9a9");var o=t("6b0d"),i=t.n(o);const r={},b=i()(r,[["render",d]]);c["default"]=b},fff5:function(n,c,t){}}]);
-//# sourceMappingURL=chunk-c2d692ca.f61097fc.js.map
